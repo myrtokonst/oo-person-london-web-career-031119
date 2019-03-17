@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require "pry"
 class Person
   attr_reader :name
@@ -80,3 +81,39 @@ class Person
 
 
 end
+=======
+# your code goes here
+class Person
+  attr_reader :name
+  attr_accessor :bank_account, :happiness, :hygiene
+  def initialize (name)
+    @name = name 
+    @bank_account = 25
+    @happiness= 8
+    @hygiene = 8
+  end 
+ def hygiene 
+   
+  def happy? 
+   if  @happiness > 7 
+     return true
+   else false 
+   end 
+ end 
+   
+def clean? 
+  if @hygiene > 7 
+    return true 
+  else false 
+  end 
+end 
+  
+  def get_paid (salary)
+    @bank_account = @bank_account + salary
+    "all about the benjamins"
+  end 
+  
+  def take_bath
+    @hygiene += 4
+end 
+>>>>>>> 940589f121ed9f09e25bac7581e359ac88c9507d
